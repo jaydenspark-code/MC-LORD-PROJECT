@@ -2,7 +2,7 @@
 // Database connection for FoodFusion
 $host = 'localhost';
 $db   = 'foodfusion';
-$user = 'root';
+$user = 'root'; // Change as needed
 $pass = '';
 $charset = 'utf8mb4';
 
@@ -13,8 +13,9 @@ $options = [
     PDO::ATTR_EMULATE_PREPARES   => false,
 ];
 try {
-     $pdo = new PDO($dsn, $user, $pass, $options);
+    $pdo = new PDO($dsn, $user, $pass, $options);
 } catch (PDOException $e) {
-     throw new PDOException($e->getMessage(), (int)$e->getCode());
+    http_response_code(500);
+    echo json_encode(['error' => 'Database connection failed']);
+    exit;
 }
-?>

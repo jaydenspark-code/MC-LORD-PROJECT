@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFusion - Home</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <!-- Responsive Navbar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="community.html">Community Cookbook</a></li>
+            <li><a href="culinary-resources.html">Culinary Resources</a></li>
+            <li><a href="educational-resources.html">Educational Resources</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- Mission Intro -->
+    <section class="intro">
+        <h1>Welcome to FoodFusion</h1>
+        <p>Promoting home cooking and culinary creativity among food enthusiasts.</p>
+        <button id="joinBtn">Join Us</button>
+    </section>
+    <!-- Join Us Pop-up Form -->
+    <div id="joinPopup" class="modal">
+        <form id="registerForm">
+            <h2>Join FoodFusion</h2>
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+            <button type="button" id="closePopup">Cancel</button>
+        </form>
+    </div>
+    <!-- News Feed -->
+    <section id="newsFeed">
+        <h2>Featured Recipes & Culinary Trends</h2>
+        <div id="newsItems"></div>
+    </section>
+    <!-- Carousel for Events -->
+    <section id="eventsCarousel">
+        <h2>Upcoming Cooking Events</h2>
+        <div class="carousel">
+            <!-- Carousel items will go here -->
+        </div>
+    </section>
+    <!-- Social Media & Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </div>
+        <a href="#" id="privacyPolicy">Privacy Policy</a>
+        <div id="cookieConsent" class="cookie-popup">
+            <span>This website uses cookies to enhance your experience.</span>
+            <button id="acceptCookies">Accept</button>
+        </div>
+    </footer>
+    <script src="assets/main.js"></script>
+</body>
+</html>
